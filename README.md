@@ -16,3 +16,5 @@ Se pueden agregar nuevas locaciones ingresando al Panel de Administración de Dj
 username: `test`
 password: `test`
 
+### Menú 'Contáctanos'
+No se ha agregado una vista de este Menú porque no estaba en los requerimientos del proyecto.
