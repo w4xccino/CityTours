@@ -1,0 +1,72 @@
+{%extends 'Turismo/base.html'%}
+{% block contenido %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityTours</title>
+  {%load static%}
+  <link rel="stylesheet" href="{%static 'Turismo/css/style.css'%}">
+
+</head>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">City Tours</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Somos una empresa que brinda la mejores experiencas a turistas</h5>
+        </div>
+        <div class="row center">
+          <a href="{% url 'lugares' %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Ver lugares</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'Turismo/img/machus-picchu.jpg'%}" alt="Unsplashed background img 1"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Experiencia</h5>
+
+            <p class="light">Nuestros años de experiencia como agencia y nuestra pasión por el turismo, nos convierten en una empresa sobresaliente que brinda los mejores Tours en Cusco como en todo Perú, los invitamos a conocer nuestro maravilloso y variado país, rico en cultura, tradiciones, paisajes y gastronomía.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Experiencia de turismo focalizada</h5>
+
+            <p class="light">Le ofrecemos inolvidables Tours a todo el Perú con tarifas accesibles, pero sobre todo le ofrecemos un excelente servicio, todo nuestro personal está capacitado y comprometido en brindarle la mejor experiencia, el resultado será un viaje maravilloso por el Perú.
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">La mejor empresa</h5>
+
+            <p class="light">Disfrute nuestros tours 2021 diseñados a su medida, para vivir unas vacaciones inolvidables; conocerá Cusco, Machu Picchu, el Camino Inca, Arequipa, Lago Titicaca, Líneas de Nazca, Manu entre otros maravillosos lugares que esperan por usted.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script src="{%static 'Turismo/js/materialize.js'%}"></script>
+<script src="{%static 'Turismo/js/jquery.js' %}"></script>
+<script src="{%static 'Turismo/js/init.js' %}"></script>
+</body>
+</html>
+{% endblock contenido %}

@@ -1,0 +1,45 @@
+{% extends 'Turismo/base.html' %}
+
+{% block contenido %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares</title>
+</head>
+<body>
+  <div class="container center">   
+    <h1>Lugares Turísticos</h1>
+  </div> 
+  <div class="row">
+    <div class="container">
+      {% for i in cards %}
+      <div class="col s12 m4 xl4">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{i.imagen.url}}">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{i.nombre}}<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{i.nombre}}<i class="material-icons right">close</i></span>
+            <p>{{i.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+{% endblock contenido %}
+
+
+

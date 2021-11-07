@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="shortcut icon" type="image/x-icon" href="{%static 'Turismo/img/logo.png'%}">
+  <link rel="stylesheet" href="{%static 'Turismo/css/materialize.css'%}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper white">
+      <div class="container">
+        <a href="{%url 'index'%}" class="black-text brand-logo">CityTours</a>
+      </div>
+      <div class="container ">
+        <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li><a class="black-text" href="{%url 'index'%}">Home</a></li>
+          <li><a class="black-text" href="{%url 'lugares'%}">Lugares</a></li>
+          <li><a class="black-text"href="#">Contactanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+{% block contenido %}
+
+{% endblock contenido %}
+<footer class="page-footer indigo">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">City Tours</h5>
+        <div class="row">
+          <a href="https://github.com/" target="_blank">
+          <img class="col s1 " src="{%static 'Turismo/img/gh_logo.png'%}"></a></img>
+          <a href="#" target="_blank">
+          <img class="col s1 " src="{%static 'Turismo/img/fb_logo.png'%}"></a></img>
+        </div>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <p class="white-text">Made by Diego Toledo</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2021 Derechos Reservados
+    <a class="grey-text text-lighten-4 right" target="_blank" href="https://github.com/w4xccino">Personal Repo</a>
+    </div>
+  </div>
+</footer> 
+<script src="{%static 'Turismo/js/materialize.js'%}"></script>
+<script src="{%static 'Turismo/js/jquery.js' %}"></script>
+</body>
+</html>
